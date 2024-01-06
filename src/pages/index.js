@@ -1,14 +1,14 @@
 import Image from 'next/image'
-import { Inter } from 'next/font/google'
+import { Alegreya } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+const alegreya = Alegreya({ subsets: ['latin'] })
 
 export default function Home() {
   return (
     <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
+      className={`flex justify-center items-center min-h-screen flex-col  bg-gradient-to-r from-slate-400 to-slate-900 ${alegreya.className}`}
     >
-   <h1>Coming Soon!</h1>
+      <h1 className={`text-gray-300 text-4xl`}>Coming Soon!</h1>
     </main>
   )
 }
